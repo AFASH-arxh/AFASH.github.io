@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentes para Todos</title>
+    <link rel="stylesheet" href="Lentes.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../Pagina_Inicial/nav.css">
+    <link rel="icon" href="imagenes/Logo (2).png" type="image/x-icon">
+
+</head>
+<body>
+
+    
+
+    <!-- Sección del proyecto "Lentes para Todos" -->
+    <section class="fondo-lentes">
+
+        <header class="header-nav">
+            <div class="logo-nav">
+              <img src="../Lentes/imagenes/Logo (2).png" alt="logo">
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="../Lentes/Lentes.html">Lentes</a></li>
+                <li><a href="../Tapitas/tapas.html">Tapitas</a></li>
+                <li><a href="../asilo/asilo_inicio.html">Asilo</a></li>
+                <li><a href="#">Zoológico</a></li>
+              </ul>
+            </nav>
+            <a href="../Pagina_Inicial/index.html" class="btm-nav"><button>Inicio</button></a>
+          </header>
+   
+
+
+
+        <div class="project-container">
+
+            <div class="project-info">
+                <h2>Lentes para Todos</h2>
+                <p>Este proyecto tiene como objetivo ayudar a personas de escasos recursos a obtener los lentes que necesitan. A través del programa <strong>"Lentes para Todos"</strong>, buscamos mejorar la calidad de vida de estas personas, brindándoles una mejor visión y, con ello, mayores oportunidades para su desarrollo personal y académico.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="imagenes/lente.jpeg" alt="Lentes para Todos" class="same-size">
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda Sección del Proyecto -->
+    <section class="fondo2-lentes">
+        <div class="project-container">
+            <div class="project-image">
+                <img src="imagenes/lente2.jpg" alt="Campaña de Lentes" class="same-size">
+            </div>
+
+            <div class="project-info">
+                <h2>Primero quienes lo necesitan</h2>
+                <p>El 22 de Septiembre del 2024, personas especializadas del DIF realizaron estudios en el CECyTEA Morelos para detectar estudiantes con problemas de la vista y hacer un estudio socioeconómico para ayudarlos con el pago de los lentes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">Galería de Personas Beneficiadas</h2>
+        <div class="gallery">
+            <img src="imagenes/cecy1.jpg" alt="Beneficiado 1">
+            <img src="imagenes/cecy2.jpg" alt="Beneficiado 2">
+            <img src="imagenes/cecy3.jpg" alt="Beneficiado 3">
+            <img src="imagenes/cecy4.jpg" alt="Beneficiado 4">
+            <img class="medio" src="imagenes/cecy5.jpg" alt="Beneficiado 5">
+        </div>
+    </section>
+
+    <!-- Documentos y Historieta -->
+    <section class="documents-container">
+        <div class="documents-list">
+            <h1 class="h12">¿Quieres ser uno de los beneficiados?</h1>
+            <p>Lleva estos documentos y ¡listo!</p>
+            <ul>
+                <li>Acta de nacimiento</li>
+                <li>INE de los tutores</li>
+                <li>CURP</li>
+            </ul>
+        </div>
+        <div class="documents-image">
+            <img src="imagenes/pensativo.png" width="350" height="300">
+        </div>
+        <div class="pdf-container">
+            <h2>Pequeña historieta</h2>
+            <iframe src="COMIC CEGUERa.pdf" width="600" height="400"></iframe>
+        </div>
+    </section>
+
+    <!-- Cuestionario -->
+    <section class="test-container">
+        <h2 class="h12">Selecciona una opción:</h2>
+        <select id="options">
+            <option value="1">¿Cómo me registro?</option>
+            <option value="2">¿Cuándo entregan los lentes?</option>
+            <option value="3">¿Dónde puedo recibir más información?</option>
+        </select>
+        <div class="result-message" id="result">Selecciona una opción para ver más información.</div>
+    </section>
+
+    <script>
+        document.getElementById('options').addEventListener('change', function() {
+            const result = document.getElementById('result');
+            const selectedValue = this.value;
+
+            switch (selectedValue) {
+                case '1':
+                    result.textContent = 'Para registrarte, visita nuestra página de registro y completa el formulario.';
+                    break;
+                case '2':
+                    result.textContent = 'Los lentes se entregan dentro de 5 a 7 días hábiles después de la confirmación del pedido.';
+                    break;
+                case '3':
+                    result.textContent = 'Puedes recibir más información en nuestra sección de contacto o llamando a nuestro servicio al cliente.';
+                    break;
+                default:
+                    result.textContent = 'Selecciona una opción para ver más información.';
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerContainer">
+          <div class="footerNav">
+            <ul>
+              <li><a href="#">Fidel Torruco Tavera</a></li>
+              <li><a href="#">Maximo De Luna Rizo</a></li>
+              <li><a href="#">Erick Ramirez Baez</a></li>
+              <li><a href="#">Dan Ramirez Durón</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright &copy; 2024; Designed by <span class="designer">ElRabos</span></p>
+        </div>
+      </footer>
+
+    
+</body>
+</html>

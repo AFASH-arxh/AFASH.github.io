@@ -1,0 +1,89 @@
+
+footer {
+    background-color: #111;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 5% 5% 2%; /* Cambiado a porcentajes para mejor responsividad */
+}
+
+.footerNav {
+    margin: 3% 0; /* Cambiado a porcentaje */
+}
+
+.footerNav ul {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    flex: 1 1 auto; /* Permite que los elementos de la lista crezcan y se reduzcan */
+    margin: 10px; /* Margen más pequeño para mejor ajuste en pantallas pequeñas */
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 10px; /* Ajustado para mejor distribución */
+    text-decoration: none;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 2%; /* Ajustado a porcentaje */
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Medias Queries para adaptarse a diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .footerNav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .footerNav ul li {
+        margin: 5px 0; /* Menos margen vertical en pantallas pequeñas */
+    }
+
+    .footerNav ul li a {
+        font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        padding: 20px 10px; /* Reducción adicional de padding */
+    }
+
+    .footerBottom {
+        padding: 10px; /* Ajuste de padding en la parte inferior */
+    }
+
+    .designer {
+        font-size: 0.8em; /* Tamaño de fuente más pequeño para diseñadores */
+    }
+}

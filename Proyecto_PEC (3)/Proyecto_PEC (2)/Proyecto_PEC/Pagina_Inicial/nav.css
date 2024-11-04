@@ -1,0 +1,75 @@
+
+.header-nav{
+    background-color: transparent;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+}
+
+.header-nav .logo-nav{
+    cursor: pointer;
+}
+
+.header-nav .logo-nav img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    margin-left: 2px;
+}
+
+.header-nav .logo-nav img:hover{
+    transform: scale(2,2);
+}
+
+.header-nav .nav-links{
+    list-style: none;
+}
+
+.header-nav .nav-links li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.header-nav .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header-nav .nav-links a{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 9px 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background:black ;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.header-nav .nav-links li a:hover{
+    background-color:rgb(247, 247, 247) ;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.header-nav .btm-nav button{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 9px 25px;
+    background:black ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-nav .btm-nav button:hover{
+    background-color:rgb(247, 247, 247) ;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
